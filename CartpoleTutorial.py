@@ -1,3 +1,4 @@
+#A basic cartpole tutorial I found at https://gym.openai.com/docs/. I use it as a base for the random flappy bird players I created.
 import gym
 env = gym.make('CartPole-v0')
 for i_episode in range(20):

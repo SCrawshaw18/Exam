@@ -1,3 +1,4 @@
+#Based on the cartpole tutorial at https://gym.openai.com/docs/
 import gym
 import gym_ple
 from random import randint
