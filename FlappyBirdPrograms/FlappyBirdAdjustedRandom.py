@@ -4,7 +4,7 @@ import gym_ple
 from random import randint
 env = gym.make('FlappyBird-v0')
 
-NUM_EPISODES = 10
+NUM_EPISODES = 2
 
 for episode in range(NUM_EPISODES):
 	observation = env.reset()

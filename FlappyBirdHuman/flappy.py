@@ -4,12 +4,13 @@
 from itertools import cycle
 import random
 import sys
-
+import requests
+import getpass
 import pygame
 from pygame.locals import *
 
 
-FPS = 30
+FPS = 45
 SCREENWIDTH  = 288
 SCREENHEIGHT = 512
 # amount by which base can maximum shift to left
@@ -335,7 +336,7 @@ def showGameOverScreen(crashInfo):
     playerAccY = 2
     playerRot = crashInfo['playerRot']
     playerVelRot = 7
-    writeToFile(score)
+    sendScore(score)
     basex = crashInfo['basex']
 
     upperPipes, lowerPipes = crashInfo['upperPipes'], crashInfo['lowerPipes']
@@ -387,6 +388,11 @@ def writeToFile(score):
     file=open("scoreSheet.txt","a")
     file.write(str(score) + "\n")
     file.close()
+
+def sendScore(score):
+    username = getpass.getuser()
+    r = requests.post("http://flappybird.ma1geek.org/postScore.php", data={'user': username, 'score': score})
+    print(r.text)
 
 def playerShm(playerShm):
     """oscillates the value of playerShm['val'] between 8 and -8"""
