@@ -1,3 +1,4 @@
+#taken from Ms. Pries and edited
 '''
 A model-free solver for the CartPole environment in the OpenAI Gym.
 

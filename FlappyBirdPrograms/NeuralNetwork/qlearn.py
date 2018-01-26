@@ -1,3 +1,4 @@
+#Code taken from https://yanpanlau.github.io/2016/07/10/FlappyBird-Keras.html. I've made minor changes in a few files to allow for score keeping. Also changed prints.
 #!/usr/bin/env python
 from __future__ import print_function
 
