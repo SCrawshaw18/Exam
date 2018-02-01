@@ -12,3 +12,6 @@ To run the random player, simply navigate to FlappyBirdPrograms and execute the 
 
 # How to Play Yourself
 To play the game youself, navigate to FlappyBirdHuman and execute the command "python3 flappy.py". Everytime you play, your scores get sent to a php file at flappybird.ma1geek.org. This php file stores your username and score in a database. In order to see past scores, open up your browser and navigate to http://flappybird.ma1geek.org/getScores.php.
+
+# Final Report
+My final report can be found at https://docs.google.com/document/d/13GKHVz9j458I85XWg0uC3kVrZpZG3XfHeW3U6BObec8/edit?usp=sharing
